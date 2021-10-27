@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionNew"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="actionNodeType"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QListWidget" name="listWidget">
+          <property name="dragEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="dragDropMode">
+           <enum>QAbstractItemView::InternalMove</enum>
+          </property>
+          <property name="movement">
+           <enum>QListView::Free</enum>
+          </property>
+          <property name="resizeMode">
+           <enum>QListView::Adjust</enum>
+          </property>
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <property name="viewMode">
+           <enum>QListView::IconMode</enum>
+          </property>
+          <property name="itemAlignment">
+           <set>Qt::AlignHCenter</set>
+          </property>
+          <item>
+           <property name="text">
+            <string>人员</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_person.png</normaloff>:/node/img/img_person.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>组织</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_crowd.png</normaloff>:/node/img/img_crowd.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>身份证</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_identity.png</normaloff>:/node/img/img_identity.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>住址</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_house.png</normaloff>:/node/img/img_house.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>汽车</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_car.png</normaloff>:/node/img/img_car.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>自行车</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_bicycle.png</normaloff>:/node/img/img_bicycle.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>微信</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_chat.png</normaloff>:/node/img/img_chat.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>支付宝</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_pay.png</normaloff>:/node/img/img_pay.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>银行卡</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/node/img/img_blank.png</normaloff>:/node/img/img_blank.png</iconset>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionnew">
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="actionnew_2">
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="actionNodeType">
+   <property name="text">
+    <string>Node Type</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

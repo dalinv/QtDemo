@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/node">
+        <file>img/img_bicycle.png</file>
+        <file>img/img_car.png</file>
+        <file>img/img_chat.png</file>
+        <file>img/img_house.png</file>
+        <file>img/img_identity.png</file>
+        <file>img/img_pay.png</file>
+        <file>img/img_person.png</file>
+        <file>img/img_phone.png</file>
+        <file>img/img_crowd.png</file>
+        <file>img/img_blank.png</file>
+    </qresource>
+</RCC>
